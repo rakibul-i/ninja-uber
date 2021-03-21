@@ -84,12 +84,12 @@ const SignIn = () => {
   }
     
     return (
-      <div>
+      <div className="signin">
         <div className="container ">
            
            {/* login form */}
            <div className="form">
-               <h2> {
+               <h2 style={{color:'white'}} > {
                  newUser ? "Create an account" : "Log in"
                  } </h2>
 
@@ -112,7 +112,7 @@ const SignIn = () => {
                     user.success && <p style={{color:'green'}}>User {newUser ?'created': 'Logged in'} successfully</p>
                 }
                <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
-               <label>{newUser ?'Already have an account?': "Don't have an account?"}</label>
+               <label style={{color:'white'}}>{newUser ?'Already have an account?': "Don't have an account?"}</label>
                
            </div>
            <div className="text-center">
