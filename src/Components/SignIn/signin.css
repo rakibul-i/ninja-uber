@@ -1,0 +1,27 @@
+.form {
+    width: 583px;
+    border: 1px solid gray;
+    height: 577px;
+    padding: 30px;
+    margin: 75px auto;
+}
+input.input-box {
+    width: 500px;
+    /* border-bottom: 1px; */
+    border: none;
+    padding: 17px;
+    border-bottom: 2px solid #80808078;
+    margin: 10px 0;
+    outline: none;
+}
+input.input-submit {
+    width: 500px;
+    /* border-bottom: 1px; */
+    border: none;
+    padding: 17px;
+    margin: 10px 0;
+    outline: none;
+    background-color: tomato;
+    color: white;
+    font-weight: 600;
+}
