@@ -1,12 +1,7 @@
 import React from 'react';
-import { Navbar, Nav  } from 'react-bootstrap';
+import { Navbar  } from 'react-bootstrap';
 import './Navbar.css'
-import  { useEffect, useState } from 'react';
-import {
-    BrowserRouter as 
-    Link
-  } from "react-router-dom";
-import fakeData from '../fakeData/FakeData';
+
 const NavBar = () => {
     
     return (
@@ -22,7 +17,7 @@ const NavBar = () => {
                 <a className="nav-link"  href="/home">Home</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link"  href= {`/transport/:userId`} >Destination</a>
+                <a className="nav-link"  href= "/transport/:Id" >Destination</a>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link"  href="/blog">Blog</a>
