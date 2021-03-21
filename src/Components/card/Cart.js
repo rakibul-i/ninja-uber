@@ -10,7 +10,7 @@ const Cart = (props) => {
         history.push(`/transport/${id}`)
     }
     return (
-        <div className="col-md-3 col-6  mt-5 " onClick={hanldeSignIn} >
+        <div className="col-lg-3 col-md-6 col-12  mt-5 " onClick={hanldeSignIn} >
             <Card className="cart mt-5" >
                 <img className="" src={image} alt=""/>
                 <h3>{name}</h3>
