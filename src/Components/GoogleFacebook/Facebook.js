@@ -38,7 +38,7 @@ const Facebook = () => {
     }
     return (
         <div>
-            <button onClick={handleFbSignIn} className="btn google-sign btn-lg" href="/"> <FaFacebook className="mb-1 mr-3 text-primary" /> Continue with google</button>
+            <button onClick={handleFbSignIn} className="btn google-sign btn-lg" href="/"> <FaFacebook className="mb-1 mr-3 text-primary" /> Continue with Facebook</button>
             
         </div>
     );

@@ -29,15 +29,18 @@ const Google = () => {
                 email: email
             }
             setUser(user);
+            console.log(displayName, email);
             setLoggedInUser(result.user);
             history.replace(from);
         }).catch((error) => {
-            
+            console.log(error.message);
   });
     }
     return (
         <div>
             <button onClick={handleGoogleSignIn} className="btn google-sign btn-lg mb-3" href="/"> <FcGoogle className="mb-1 mr-3" /> Continue with google</button>
+            <h1>{user.name}</h1>
+            <h1>{user.email}</h1>
         </div>
     );
 };

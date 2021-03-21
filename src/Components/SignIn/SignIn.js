@@ -1,6 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
-import NavBar from '../Navbar/NavBar';
+import React, { useContext, useState } from 'react';
 import Google from '../GoogleFacebook/Google'
 import './signin.css'
 import Facebook from '../GoogleFacebook/Facebook';
@@ -11,7 +9,6 @@ import { useHistory, useLocation } from 'react-router';
 if(firebase.apps.length === 0){
   firebase.initializeApp(firebaseConfig);
 }
- export const LoginInfo = createContext();
 const SignIn = () => {
   // privet route
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -73,7 +70,7 @@ const SignIn = () => {
         newUserInfo.success = true;
         setUser(newUserInfo);
         setLoggedInUser(res.user);
-            history.replace(from);
+       history.replace(from);
        console.log('sign in user information' , res.user)
       })
       .catch((error) => {
@@ -87,7 +84,7 @@ const SignIn = () => {
   }
     
     return (
-      <LoginInfo.Provider value={[user, setUser]}>
+      <div>
         <div className="container ">
            
            {/* login form */}
@@ -123,7 +120,7 @@ const SignIn = () => {
            <Facebook></Facebook>
            </div>
         </div>
-        </LoginInfo.Provider>
+        </div>
     );
 };
 
